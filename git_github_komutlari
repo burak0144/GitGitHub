@@ -1,0 +1,30 @@
+ /*
+    1-git init ==> Local repo olusturmak icin yani .git ile klasorumuzun icindeki dosyalari
+    iliskilendirmek icin kullanilir
+    2-git add . ==>Working space'den (yerel) dosyalarimi statiging are'ya (committlemek icin beklenen yer)
+    gonderir
+    3-git status ==>calismamizin hangi bolumde oldugunu gormek icin kullaniriz
+    4-git commit -m"mesaj"==>Staging area'dan commit stora'a dosyalarimi gondermek icin kullanilir
+    (commit yani versiyon yani surum olusturmus olurum)
+    4-git push ==>Uzak repo'ya (yani remote -GitHub)gondermek icin kullandigimiz kod
+    Yalniz git push methodunu direkt kullanmak istersek 1 kez
+              git remote add orijin adress
+              git push -u orijin master
+              Not;Yukaridaki iki komutu tek seferde kullandiktan sonra ikinci commit'lerim icin sadece git
+              push kullaniriz
+              ...
+    5-git branch ==>kendi branchimizi olusturabilmek icin
+                git branch (branch ismi) yazilarak branch olusturulur
+                Daha cok Collobration calismalarda kendi branchinde calisilir,bu yuzden
+                kendi branchimizi olusturduktan sonra kendi branchimize geceriz
+    6-git checkout (branch ismi)==>branch degisikligi icin bu komut kullanilir
+    7-git log --oneline==>Eger versiyonlarin hashcodunu gormek istersek bu sekilde sorgulariz
+                        Eski versiyona gecmek icin branchte oldugu gibi checkout komutuyla hashcodunu yazip
+                        gecebiliriz
+    8-git stash==>Kendi branchimizde calisirken master branche gecmek icin once kendi branchimizdeki calismlarimizi
+                 kayit altina almak istiyorsak bu komutu kullaniriz,calisalarimizi kayit altina aliriz
+                 Sonrasinda ana branchte isimiz bitince kendi branchimize gecince git stash pop komutuyla
+                 calismamizi geri getiririz
+    9-git clone==>Git hub daki calismalari localimize almak icin git clone (origin adress) ile getiririz
+    10-git remote -v==>Hangi adrese bagli oldugumuzu sorgulayabiliriz
+     */
